@@ -23,7 +23,30 @@ public class TokenPass {
         }
     }
     public void printBoard() {
-
+        String Board = "";
+        String temp = "";
+        int playerValue = 0;
+        for(int i = 0 ;i<board.length;i++)
+        {
+            playerValue = board[i];
+            temp = "Player" + i + ": " + playerValue + " ";
+            Board += temp;
+        }
+        System.out.println(Board);
+    }
+    public int gameOver()
+    {
+        if(board[currentPlayer] == 0)
+        {
+            return 0;
+        }
+        else
+        {
+            return;
+        }
+    }
+    public int nextPlayer(){
+        return currentPlayer++;
     }
 
 
