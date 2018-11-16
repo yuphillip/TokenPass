@@ -42,7 +42,7 @@ public class TokenPass {
         }
         else
         {
-            return;
+            return 1;
         }
     }
     public int nextPlayer(){
